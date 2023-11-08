@@ -1,0 +1,306 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:regular,500,600&display=swap);
+
+@font-face {
+	font-family: CalSans;
+	font-display: swap;
+	src: url("../fonts/CalSans-SemiBold.woff2") format("woff2"), url("../fonts/CalSans-SemiBold.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: none;
+	box-sizing: border-box;
+}
+#store {
+	color: #FF6428;
+}
+html,
+body {
+	height: 100%;
+	min-width: 320px;
+}
+body {
+	line-height: 1;
+	font-family: Poppins;
+	color: #666666;
+}
+a {
+	text-decoration: none;
+}
+li {
+	list-style: none;
+}
+.wrapper {
+	overflow: hidden;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+[class*="__container"] {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0px 15px;
+}
+
+.header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 50;
+	border-bottom: solid 1px #FF6428;
+}
+.header__container {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	display: flex;
+	gap: 131px;
+	align-items: center;
+	min-height: 152px;
+}
+.menu {
+	padding: 10px 15px 10px 0px;
+	border-radius: 5px;
+	background-color: rgba(255, 255, 255, 0.8);
+}
+.menu__list {
+	display: flex;
+	column-gap: 56px;
+	row-gap: 10px;
+	flex-wrap: wrap;
+}
+.menu__link {
+	color: rgba(18, 18, 18, 0.4);
+	font-weight: 500;
+}
+.menu__link:hover {
+	color: #FF6428;
+	transition: 0.4s;
+}
+
+.cart__icon {
+	margin-left: auto;
+}
+
+
+@media (max-width: 1091.98px) {
+	.header__container {
+		gap: 50px;
+		min-height: 100px;
+	}
+	.menu__list {
+		column-gap: 40px;
+	}
+	.cart__icon {
+		margin-left: 37%;
+	}
+}
+@media (max-width: 883.98px) {
+	.cart__icon {
+		margin-left: auto;
+	}
+}
+@media (max-width: 767.98px) {
+	.header__container {
+		min-height: 65px;
+	}
+	.cart__icon {
+		margin-left: auto;
+	}
+}
+@media (max-width: 567.98px) {
+	.header__container {
+		gap: 25px;
+	}
+	.menu__list {
+		column-gap: 20px;
+	}
+	.cart__icon {
+		margin-left: auto;
+	}
+}
+@media (max-width:479.98px) {
+	.header__container {
+		gap: 15px;
+	}
+
+	.menu {
+		padding: 0;
+	}
+	.menu__list {
+		column-gap: 20px;
+	}
+
+	.header__logo {
+		width: 28px;
+		flex: 0 0 28px;
+		overflow: hidden;
+	}
+}
+
+
+.main {
+	padding-bottom: 80px;
+}
+@media (max-width: 1091.98px) {
+	.main {
+		margin-top: -50px;
+	}
+}
+@media (max-width: 991.98px){
+	.main {
+		padding-bottom: 50px;
+	}
+}
+@media (max-width: 767.98px) {
+	.main {
+		padding-bottom: 30px;
+		margin-top: -100px;
+	}
+}
+
+
+/*cart-contents*/
+.main__content {
+	margin-top: 200px;
+	display: flex;
+}
+		/*products*/
+.main__content-products {
+	max-width: 780px;
+	flex: 1;
+  margin: 10px;
+}
+.products__header-list {
+	margin-top: 1%;
+	margin-bottom: 2%;
+	border-bottom: solid 1px #FF6428;
+}
+.products__header-list li {
+	display: inline;
+}
+.price {
+	margin-left: 30%;
+}
+.qty {
+	margin-left: 15%;
+}
+.total {
+	margin-left: 15%;
+}
+
+.items-guitarimg {
+	max-width: 70px;
+}
+.items-name{
+	color: #121212;
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+width: 30.5%;
+}
+.items-price {
+	width: 20.5%;
+}
+.items-qty {
+	margin-left: 1%;
+	width: 3%;
+	
+}
+.items-total {
+	color: #FF6428;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 16px; /* 100% */
+margin-left: 14%;
+width: 13%;
+}
+.items-minus {
+	background: none;
+	width: 4%;
+}
+.items-plus {
+	background: none;
+	width: 3%;
+}
+.items-delete {
+	background: none;
+
+}
+.list__elem {
+	display: flex;
+	align-items: center;
+	margin-top: 3%;
+}
+
+
+
+		/*total*/
+.main__content-total {
+
+	max-width: 330px;
+	flex: 1;
+  margin: 10px;
+}
+.total__header {
+	position: relative;
+	border-bottom: solid 1px #FF6428;
+}
+.coupon__text {
+	margin-top: 5%;
+	color: #3D3D3D;
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 16px; /* 114.286% */
+}
+.total__totals input {
+	width: 100%;
+height: 40px;
+flex-shrink: 0;
+margin-top: 1%;
+border-radius: 3px;
+border: 1px solid #FF6428;
+
+}
+.coupon {
+	float: right;
+	width: 30%;
+height: 40px;
+flex-shrink: 0;
+border-radius: 0px 3px 3px 0px;
+background: #FF6428;
+transform: translateY(-100%); 
+
+}
+.stat {
+	
+}
+
+.checkout-button {
+	border-radius: 3px;
+background: #FF6428;
+width: 100%;
+height: 40px;
+flex-shrink: 0;
+margin-bottom: 3%;
+}
+.shopping-button {
+	color: #FF6428;
+font-family: Poppins;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 16px; /* 106.667% */
+margin-left: 28%;
+}
