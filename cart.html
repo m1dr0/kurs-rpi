@@ -35,17 +35,17 @@
 							</div>
 							<div class="products__items items">
 								<ul class="items__list">
-									<li class="list__elem">
+									<li class="list__elem elem1">
 										<img class="items-guitarimg" src="img/store/03.jpg" alt="">
 										<a class="items-name">Hummingbird Standard</a>
-										<a class="items-price">$2,099.00</a>
+										<a class="items-price">$2,199.00</a>
 										<button class="items-minus" type="button"><img src="img/cart/minus.svg" alt="-"></button>
 										<a class="items-qty">2</a>
 										<button class="items-plus" type="button"><img src="img/cart/plus.svg" alt="+"></button>
-										<a class="items-total">$4,198.00</a>
+										<a class="items-total">$4,398.00</a>
 										<button class="items-delete" type="button"><img src="img/cart/del.svg" alt=""></button>
 									</li>
-									<li class="list__elem">
+									<li class="list__elem elem2">
 										<img class="items-guitarimg" src="img/store/02.jpg" alt="">
 										<a class="items-name">J-45 Standard</a>
 										<a class="items-price">$1,699.00</a>
@@ -55,7 +55,7 @@
 										<a class="items-total">$5,097.00</a>
 										<button class="items-delete" type="button"><img src="img/cart/del.svg" alt=""></button>
 									</li>
-									<li class="list__elem">
+									<li class="list__elem elem3">
 										<img class="items-guitarimg" src="img/store/01.jpg" alt="">
 										<a class="items-name">The Essential Les Paul</a>
 										<a class="items-price">$1,299.00</a>
@@ -76,21 +76,122 @@
 								</div>
 								<div class="total__totals">
 									<h4 class="coupon__text">Coupon Apply</h4>
-									<input type="text" placeholder="  Enter coupon code here..."><button class="coupon" type="submit">Apply</button>
-									<a class="stat">Subtotal</a><a class="sum">$13 192</a>
-									<a class="stat">Coupon Discount</a><a class="sum">(-) 00.00</a>
+									<input class="coupon-input" type="text" placeholder="Enter coupon code here..."><button class="coupon-button" type="submit">Apply</button>
+									<div class="subtotal">
+									<a class="subtotal__text">Subtotal</a><a class="subtotal__sum">$13,392</a></div>
+									<div class="discount">
+									<a class="discount__text">Coupon Discount</a><a class="discount__sum">(-) 00.00</a></div>
+									<div class="total-price">
+										<a class="total__text">Total</a><a class="total__sum">$13,392</a>
+									</div>
 									<button class="checkout-button" type="button">Proceed to Checkout</button>
 									<a class="shopping-button" href="store.html">Continue Shopping</a>
 								</div>
-									
-									
-	
 								</div>
 						</div>
 						</div>
 					</div>
 				</div>
 			</section>
+			<section class="page__why why">
+				<div class="why__container">
+					<h2 class="why__title title">Why try <span>Rhythm?</span></h2>
+					<div class="why__items">
+						<div class="why__item item-why">
+							<div class="item-why__icon">
+								<img src="img/why/01.svg" alt="Icon">
+							</div>
+							<div class="item-why__title">Smooth Browsing</div>
+							<div class="item-why__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+						</div>
+						<div class="why__item item-why">
+							<div class="item-why__icon">
+								<img src="img/why/02.svg" alt="Icon">
+							</div>
+							<div class="item-why__title">EASY Delivery</div>
+							<div class="item-why__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+						</div>
+						<div class="why__item item-why">
+							<div class="item-why__icon">
+								<img src="img/why/03.svg" alt="Icon">
+							</div>
+							<div class="item-why__title">SwiFT PAYMENTS</div>
+							<div class="item-why__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+						</div>
+					</div>
+				</div>
+			</section>
 		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__body body-footer">
+					<div class="body-footer__column">
+						<a href="index.html" class="body-footer__logo">
+							<img src="img/footer/logo.svg" alt="Footer Logo">
+						</a>
+						<ul class="body-footer__contacts contacts-footer">
+							<li class="contacts-footer__item">
+								<a href="mailto:enquiry@Rhythm.com" class="contacts-footer__link contacts-footer__link_mail">Enquiry@Rhythm.com</a>
+							</li>
+							<li class="contacts-footer__item">
+								<a href="#" class="contacts-footer__link contacts-footer__link_location">San Francisco</a>
+							</li>
+						</ul>
+					</div>
+					<div class="body-footer__column body-footer__column_full">
+						<nav class="body-footer__menu menu-footer">
+							<div class="menu-footer__column">
+								<div class="menu-footer__title">Pages</div>
+								<ul class="menu-footer__list">
+									<li class="menu-footer__item">
+										<a href="" class="menu-footer__link">Store</a>
+									</li>
+									<li class="menu-footer__item">
+										<a href="" class="menu-footer__link">Collections</a>
+									</li>
+									<li class="menu-footer__item">
+										<a href="" class="menu-footer__link">Support</a>
+									</li>
+								</ul>
+							</div>
+							<div class="menu-footer__column">
+								<div class="menu-footer__title">Product</div>
+								<ul class="menu-footer__list">
+									<li class="menu-footer__item">
+										<a href="" class="menu-footer__link">Terms</a>
+									</li>
+									<li class="menu-footer__item">
+										<a href="" class="menu-footer__link">Privacy Policy</a>
+									</li>
+									<li class="menu-footer__item">
+										<a href="" class="menu-footer__link">Copyright</a>
+									</li>
+								</ul>
+							</div>
+						</nav>
+					</div>
+					<div class="body-footer__column">
+						<div class="body-footer__social social-footer">
+							<div class="social-footer__title">Follow us</div>
+							<div class="social-footer__items">
+								<a href="" class="social-footer__item">
+									<img src="img/footer/social//01.svg" alt="">
+								</a>
+								<a href="" class="social-footer__item">
+									<img src="img/footer/social//02.svg" alt="">
+								</a>
+								<a href="https://instagram.com/van_illlaa" target="_blank" class="social-footer__item">
+									<img src="img/footer/social//03.svg" alt="">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer__copy">
+					© 2022 Copyright.Rhythm
+				</div>
+			</div>
+		</footer>
+		<script src="js/script.js"></script>
 </body>
 </html>
