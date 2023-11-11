@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="css/cart.css">
+	<link rel="stylesheet" href="css/checkout.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Cart</title>
+	<title>Checkout</title>
 </head>
 <body>
 	<div class="wrapper">
@@ -26,57 +26,75 @@
 					<div class="main__content">
 						<div class="main__content-products">
 							<div class="products__header">
-								<ul class="products__header-list">
-									<li class="products">Products</li>
-									<li class="price">Price</li>
-									<li class="qty">Quantity</li>
-									<li class="total">Total</li>
-								</ul>
+								<h2>Billing address</h2>
 							</div>
 							<div class="products__items items">
-								<ul class="items__list">
-									<li class="list__elem elem1">
-										<img class="items-guitarimg" src="img/store/03.jpg" alt="">
-										<a class="items-name">Hummingbird Standard</a>
-										<a class="items-price">$2,199.00</a>
-										<button class="items-minus" type="button"><img src="img/cart/minus.svg" alt="-"></button>
-										<a class="items-qty">2</a>
-										<button class="items-plus" type="button"><img src="img/cart/plus.svg" alt="+"></button>
-										<a class="items-total">$4,398.00</a>
-										<button class="items-delete" type="button"><img src="img/cart/del.svg" alt=""></button>
-									</li>
-									<li class="list__elem elem2">
-										<img class="items-guitarimg" src="img/store/02.jpg" alt="">
-										<a class="items-name">J-45 Standard</a>
-										<a class="items-price">$1,699.00</a>
-										<button class="items-minus" type="button"><img src="img/cart/minus.svg" alt="-"></button>
-										<a class="items-qty">3</a>
-										<button class="items-plus" type="button"><img src="img/cart/plus.svg" alt="+"></button>
-										<a class="items-total">$5,097.00</a>
-										<button class="items-delete" type="button"><img src="img/cart/del.svg" alt=""></button>
-									</li>
-									<li class="list__elem elem3">
-										<img class="items-guitarimg" src="img/store/01.jpg" alt="">
-										<a class="items-name">The Essential Les Paul</a>
-										<a class="items-price">$1,299.00</a>
-										<button class="items-minus" type="button"><img src="img/cart/minus.svg" alt="-"></button>
-										<a class="items-qty">3</a>
-										<button class="items-plus" type="button"><img src="img/cart/plus.svg" alt="+"></button>
-										<a class="items-total">$3,897.00</a>
-										<button class="items-delete" type="button"><img src="img/cart/del.svg" alt=""></button>
-									</li>
+								<div class="left">
+									<ul>
+										<li><a>First name</a><span> *</span></li>
+									<li><input type="text" name="" id=""></li>
+									<li><a>Country / Region</a><span> *</span></li>
+									<li><input type="text" name="" id="" placeholder="Select a country / region"></li>
+									<li><a>Street address</a><span> *</span></li>
+									<li><input type="text" name="" id="" placeholder="House number and street name"></li>
+									<li><a>State</a><span> *</span></li>
+									<li><select name="" id="" aria-placeholder="Select a state" >
+										<option value="">Aidaho</option>
+										<option value="">Iowa</option>
+										<option value="">Alabama</option>
+										<option value="">Alaska</option>
+										<option value="">Arizona</option>
+										<option value="">Arkansas</option>
+									</select></li>
+									<li><a>Email address</a><span> *</span></li>
+									<li><input type="text" name="" id=""></li>
+									<li><a>Order notes (optional)</a></li>
+									<li><textarea class="additional" type="text" name="" id=""></textarea></li>
+									
 								</ul>
-					</div>
+								
+
+								</div>
+								<div class="right">
+									<ul><li><a>Last name</a><span> *</span></li>
+									<li><input type="text" name="" id=""></li>
+									<li><a>Town / City</a><span> *</span></li>
+									<li><input type="text" name="" id=""></li>
+									<li><a>⠀</a></li>
+									<li>
+										<input type="text" name="" id="" placeholder="Apartment, suite, unit, etc. (optional)"></li>
+									<li><a>Zip</a><span> *</span></li>
+									<li><input type="text" name="" id=""></li>
+									<li><a>Phone Number</a><span> *</span></li>
+									<li><input type="number" name="" id=""></li>
+								</ul>
+								</div>
+							</div>
 							
 
 							</div>
 							<div class="main__content-total">
 								<div class="total__header">
-									<h2>Cart totals</h2>
+									<h2>Your order</h2>
 								</div>
 								<div class="total__totals">
-									<h4 class="coupon__text">Coupon Apply</h4>
-									<input class="coupon-input" type="text" placeholder="Enter coupon code here..."><button class="coupon-button" type="submit">Apply</button>
+									<ul>
+										<li class="list__elem">
+											<img class="items-guitarimg" src="img/store/03.jpg" alt="">
+											<a class="items-name">Hummingbird Standard</a>
+											<a class="items-price">$4,398.00</a>
+										</li>
+									<li class="list__elem">
+										<img class="items-guitarimg" src="img/store/02.jpg" alt="">
+										<a class="items-name">J-45 Standard</a>
+										<a class="items-price">$5,097.00</a>
+									</li>
+									<li class="list__elem">
+										<img class="items-guitarimg" src="img/store/01.jpg" alt="">
+										<a class="items-name">The Essential Les Paul</a>
+										<a class="items-price">$3,897.00</a>
+									</li>
+								</ul>
 									<div class="subtotal">
 									<a class="subtotal__text">Subtotal</a><a class="subtotal__sum">$13,392</a></div>
 									<div class="discount">
@@ -84,8 +102,21 @@
 									<div class="total-price">
 										<a class="total__text">Total</a><a class="total__sum">$13,392</a>
 									</div>
-									<a href="checkout.html"><button class="checkout-button" type="button">Proceed to Checkout</button></a>
-									<a class="shopping-button" href="store.html">Continue Shopping</a>
+									<div class="total-radio">
+										<ul class="total-radio__list">
+											<li class="radio__list-item">
+												<input type="radio" name="total" id=""><img src="img/cart/visa-mastercard.svg" alt="" style="max-width: 100%;">
+
+											</li>
+										<li class="radio__list-item">
+											<input type="radio" name="total" id=""><a>Direct bank transfer</a>
+										</li>
+										<li class="radio__list-item" style="border-color: #FF6428;">
+											<input type="radio" name="total" id="" checked ><a>Cash on delivery</a>
+										</li>
+									</ul>
+									</div>
+									<a><button class="checkout-button" type="button">Place order</button></a>
 								</div>
 								</div>
 						</div>
@@ -192,6 +223,6 @@
 				</div>
 			</div>
 		</footer>
-		<script src="js/cart.js"></script>
+		<script src="js/checkout.js"></script>
 </body>
 </html>

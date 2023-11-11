@@ -7,7 +7,11 @@
 	font-weight: 400;
 	font-style: normal;
 }
-
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 *,
 *::before,
 *::after {
@@ -171,30 +175,54 @@ li {
 	margin-top: 200px;
 	display: flex;
 }
-		/*products*/
+		/*billing*/
 .main__content-products {
-	max-width: 780px;
+	max-width: 100%;
 	flex: 1;
   margin: 10px;
 }
-.products__header-list {
-	height: 30px;
-	margin-top: 1%;
-	margin-bottom: 3%;
+.products__header {
 	border-bottom: solid 1px #FF6428;
+	height: 37px;
 }
-.products__header-list li {
-	display: inline;
+
+.items {
+	margin-top: 10px;
+	display: flex;
 }
-.price {
-	margin-left: 30%;
+.additional {
+	height: 100px !important;
+	width: 100%;
+	resize: none;
+	border: #000000 solid 1px;
+	border-radius: 3px;
 }
-.qty {
-	margin-left: 15%;
+.left {
+	max-width: 50%;
 }
-.total {
-	margin-left: 15%;
+.right {
+	margin-left: 10%;
+	max-width: 50%;
 }
+
+.items input, .items select{
+	border-radius: 3px;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  height: 40px;
+	width: 335px;
+	padding-left: 5%;
+}
+
+.items li {
+	margin-top: 5%;
+}
+
+.items span {
+	color: red;
+}
+
+
 
 .items-guitarimg {
 	max-width: 70px;
@@ -206,38 +234,14 @@ font-size: 14px;
 font-style: normal;
 font-weight: 500;
 line-height: normal;
-width: 30.5%;
+width: 100%;
 }
 .items-price {
-	width: 20.5%;
-}
-.items-qty {
-	margin-left: 1%;
-	width: 3%;
-	
-}
-.items-total {
+	width: 23%;
 	color: #FF6428;
-font-family: Poppins;
-font-size: 16px;
-font-style: normal;
-font-weight: 700;
-line-height: 16px; /* 100% */
-margin-left: 14%;
-width: 13%;
 }
-.items-minus {
-	background: none;
-	width: 4%;
-}
-.items-plus {
-	background: none;
-	width: 3%;
-}
-.items-delete {
-	background: none;
 
-}
+
 .list__elem {
 	display: flex;
 	align-items: center;
@@ -245,53 +249,20 @@ width: 13%;
 }
 
 
-
 		/*total*/
 .main__content-total {
 
-	max-width: 330px;
+	max-width: 410px;
 	flex: 1;
   margin: 10px;
 }
 .total__header {
-	height: 38px;
+	height: 37px;
 	position: relative;
 	border-bottom: solid 1px #FF6428;
 }
-.coupon__text {
-	margin-top: 5%;
-	color: #3D3D3D;
-font-family: Poppins;
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: 16px; /* 114.286% */
-}
-.total__totals input {
-	width: 70%;
-height: 40px;
-flex-shrink: 0;
-margin-top: 1%;
-border-radius: 3px;
-border: 1px solid #FF6428;
-padding-left: 3%;
 
-}
-.coupon-button {
-	float: right;
-	width: 30%;
-height: 40px;
-flex-shrink: 0;
-border-radius: 0px 3px 3px 0px;
-background: #FF6428;
-transform: translateY(+8%); 
-color: #FFF;
-font-family: Poppins;
-font-size: 15px;
-font-style: normal;
-font-weight: 700;
-line-height: 16px; /* 106.667% */
-}
+
 .subtotal{
 	margin-top: 10%;
 }
@@ -350,11 +321,12 @@ line-height: 16px; /* 100% */
 .checkout-button {
 	border-radius: 3px;
 background: #FF6428;
-width: 100%;
+width: 80%;
 height: 40px;
 flex-shrink: 0;
 margin-top: 5%;
 margin-bottom: 3%;
+margin-left: 10%;
 color: #FFF;
 font-family: Poppins;
 font-size: 15px;
@@ -362,14 +334,20 @@ font-style: normal;
 font-weight: 700;
 line-height: 16px; /* 106.667% */
 }
-.shopping-button {
-	color: #FF6428;
-font-family: Poppins;
-font-size: 15px;
-font-style: normal;
-font-weight: 400;
-line-height: 16px; /* 106.667% */
-margin-left: 28%;
+
+.total-radio input {
+	margin-left: 5%;
+	margin-right: 5%;
+}
+.total-radio__list li{
+	margin-top: 5%;
+	margin-left: 10%;
+	height: 45px;
+	max-width: 80%;
+	display: flex;
+	align-items: center;
+	border: #000000 solid 1px;
+	border-radius: 3px;
 }
 
 /*why*/
