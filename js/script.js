@@ -10,8 +10,3 @@ if (reviewsSwiper) {
 		},
 	});
 }
-
-
-//checkout-radiobuttons
-const radioButtonField = document.querySelectorAll('.total-radio')
-console.log(radioButtonField)

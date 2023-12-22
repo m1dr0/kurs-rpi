@@ -28,22 +28,15 @@ radioButtonField.forEach(elem => {
 const placeOrderButton = document.querySelector('.checkout-button')
 const inputField = document.querySelectorAll('.items input')
 
-let countEmptyFields = 9;
-function emptyFields(field) {
-	if (field.value != '')
-		return countEmptyFields--;
-}
 placeOrderButton.addEventListener("click", () => {
-	countEmptyFields = 9;
+	countEmptyFields = 0;
 	inputField.forEach(elem => {
-		emptyFields(elem);
+		if (elem.value == '')
+			countEmptyFields++
 		console.log(countEmptyFields)
 	})
-	if (countEmptyFields == 9)
+	if (countEmptyFields != 0)
 		alert('Required fields are not filled in!')
 	else 
 		alert('Order placed!')
 })
-
-//modal
-

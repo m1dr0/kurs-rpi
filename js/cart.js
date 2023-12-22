@@ -39,7 +39,9 @@ let totalPrice0 = 0;
 let totalPrice1 = 0;
 let totalPrice2 = 0;
 
-function calculateTotal(totalPrice0 = parseInt(productTotalPrice[0].textContent.replace(/[^\d]/gi, '').slice(0, -2)) ,totalPrice1 = parseInt(productTotalPrice[1].textContent.replace(/[^\d]/gi, '').slice(0, -2)), totalPrice2 = parseInt(productTotalPrice[2].textContent.replace(/[^\d]/gi, '').slice(0, -2))){
+function calculateTotal(totalPrice0 = parseInt(productTotalPrice[0].textContent.replace(/[^\d]/gi, '').slice(0, -2)), 
+			totalPrice1 = parseInt(productTotalPrice[1].textContent.replace(/[^\d]/gi, '').slice(0, -2)), 
+			totalPrice2 = parseInt(productTotalPrice[2].textContent.replace(/[^\d]/gi, '').slice(0, -2))) {
 	let subtotal = totalPrice0+totalPrice1+totalPrice2;
 	if (subtotal == 0){
 		subtotalField.textContent = '$0'
